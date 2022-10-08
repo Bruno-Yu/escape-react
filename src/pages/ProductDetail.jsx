@@ -11,7 +11,7 @@ function ProductDetail() {
       .then((response) => {
         setState(response.data.product);
       });
-  }, [])
+  }, [productId])
 
   function handleChange(event) {
     const { id, value } = event.target;
